@@ -26,7 +26,7 @@ if not exist "%BIN%tls_clienthello_www_google_com.bin" (
 )
 
 echo Запуск приложения %date% %time% >> "%LOGFILE%"
-start "poshel naxyi rkn by claustrophob" /min "%BIN%winws.exe" --wf-tcp=443 --wf-udp=443,50000-50100 ^
+start "poshel naxyi rkn" /min "%BIN%winws.exe" --wf-tcp=443 --wf-udp=443,50000-50100 ^
 --filter-udp=443 --hostlist="list-discord.txt" --dpi-desync=fake --dpi-desync-repeats=1 --dpi-desync-fake-quic="%BIN%quic_initial_www_google_com.bin" --new ^
 --filter-udp=50000-50100 --ipset="ipset-discord.txt" --dpi-desync=fake --dpi-desync-any-protocol --dpi-desync-cutoff=d3 --dpi-desync-repeats=1 --new ^
 --filter-tcp=443 --hostlist="list-discord.txt" --dpi-desync=fake,split --dpi-desync-autottl=1 --dpi-desync-repeats=1 --dpi-desync-fooling=badseq --dpi-desync-fake-tls="%BIN%tls_clienthello_www_google_com.bin" >> "%LOGFILE%" 2>&1
