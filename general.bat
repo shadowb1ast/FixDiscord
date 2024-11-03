@@ -43,4 +43,4 @@ set PARAMETERS=%PARAMETERS% --dpi-desync=fake,split --dpi-desync-autottl=1
 set PARAMETERS=%PARAMETERS% --dpi-desync-repeats=3
 set PARAMETERS=%PARAMETERS% --dpi-desync-fake-tls="%BIN%tls_clienthello_www_google_com.bin"
 
-start "poshel naxyi rkn by claustrophob" /min "%BIN%winws.exe" %PARAMETERS%
+start "poshel naxyi rkn" /min "%BIN%winws.exe" %PARAMETERS%
